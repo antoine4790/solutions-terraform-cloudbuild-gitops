@@ -47,7 +47,9 @@ steps:
           cd ../../
         done
       fi 
-
+options:
+  logging: CLOUD_LOGGING_ONLY
+  
 # [START tf-plan]
 - id: 'tf plan'
   name: 'hashicorp/terraform:1.0.0'
