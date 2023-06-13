@@ -47,8 +47,6 @@ steps:
           cd ../../
         done
       fi 
-options:
-  logging: CLOUD_LOGGING_ONLY
   
 # [START tf-plan]
 - id: 'tf plan'
@@ -92,3 +90,5 @@ options:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]      
+options:
+  logging: CLOUD_LOGGING_ONLY
